@@ -15,10 +15,11 @@ Python 3.12, LightGBM: Gradient Boosting for high-performance regression. Pandas
 3. Outlier LockdownTo prevent the "Score Explosion" (where one bad prediction ruins the total RMSLE), we implemented:Hard Clipping: All predictions are mathematically capped at 2,500, the historical maximum in the training data.Log-Space Optimization: By predicting in log-space, we avoid the risk of exponential overflows that cause non-finite submission values.
 
 # 🚀 How to RunEnvironment Setup:
-Bashpip install pandas numpy lightgbm scikit-learn pyarrow
-Data Placement:Place Train.csv, Test.csv, transactions_features.parquet, and demographics_clean.parquet in the root directory.Execution:Bashpython model.py
+1) <Bash> ~ 'pip install pandas numpy lightgbm scikit-learn pyarrow'
+2) Data Placement:Place Train.csv, Test.csv, transactions_features.parquet, and demographics_clean.parquet in the root directory (Link to Challenge to get Parquet files: https://zindi.africa/competitions/nedbank-transaction-volume-forecasting-challenge/data)
+3) Execution: <Bash> "python model.py"
 
 # 📈 Performance Summary Cross-Validation: 
-5-Fold K-Fold Strategy.Baseline RMSLE: ~0.45 Optimized Best Solution:0.391373554 
+5-Fold K-Fold Strategy. Baseline RMSLE: ~0.45 Optimized Best Solution: *0.391373554* 
 
-Author: Joseph Sico Birch Kayombo Software Engineer & Full-Stack Developer
+# Author: *Joseph Sico Birch Kayombo ~ Software Engineer & Full-Stack Developer*
